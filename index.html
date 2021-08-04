@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="clal">
+            <h3> &#128525; Freindship Calculator &#128525;</h3>
+            <input type="text" name="" id="l1" placeholder="Your Name"><br><br>
+            <input type="text" id="l2" placeholder="Your's Friend Name"> <br>
+            <input type="button" onclick="return(cal());" class="btn" value="Check">
+        </div><br><br>
+        <div class="out">
+            <h3 id="op">0%</h3>
+        </div>
+    </div>
+    <script>
+        function cal(){
+            var x=document.getElementById('l1');
+            var y=document.getElementById('l2');
+            if(x.value===""){
+                alert("Please Enter Details")
+            }
+            else if(y.value===""){
+                alert("Please Enter Details")
+            }
+            else{
+               
+                var z=Math.floor(Math.random()*100);
+            }
+            var d=document.getElementById("op");
+            
+            d.innerHTML=z+"%";if(z>=90){
+                confirm("Never Loss Your Friendship!Be like this Forever!")
+            }
+        }
+    </script>
+</body>
+</html>
